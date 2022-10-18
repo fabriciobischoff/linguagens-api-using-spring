@@ -19,11 +19,6 @@ public class WebSecurityConfigV2 {
 		http.httpBasic()
 			.and()
 			.authorizeHttpRequests()
-			//.antMatchers(HttpMethod.GET, "/linguagens/**").permitAll() // para metodos GET na URI "/linguagens/qualquercoisa"
-			//.antMatchers(HttpMethod.POST, "/linguagens").hasRole("USER") // para metodos POST na URI "/linguagens" somente role USER
-			//.antMatchers(HttpMethod.POST, "/linguagens").hasAnyRole("ADMIN", "USER")
-			//.antMatchers(HttpMethod.DELETE, "/linguagens/**").hasRole("ADMIN") // para metodos DELETE na URI "/linguagens/qualquercoisa" somente role ADMIN
-			//.anyRequest().permitAll(); // permite acesso à todas as requisições
 			.anyRequest().authenticated() // todas as requisições precisam de autenticação
 			.and()
 			.csrf().disable(); // permite acesso a métodos POST, PUT e DELETE, usar somente em produção.
