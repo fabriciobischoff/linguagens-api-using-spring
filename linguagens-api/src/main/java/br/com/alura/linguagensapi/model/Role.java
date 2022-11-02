@@ -1,6 +1,5 @@
 package br.com.alura.linguagensapi.model;
 
-import java.io.Serializable;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -22,7 +21,7 @@ import br.com.alura.linguagensapi.enums.RoleName;
 
 @Entity
 @Table(name = "tb_role")
-public class Role implements GrantedAuthority, Serializable {
+public class Role implements GrantedAuthority {
 
 	private static final long serialVersionUID = 1L;
 

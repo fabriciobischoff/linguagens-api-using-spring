@@ -1,6 +1,5 @@
 package br.com.alura.linguagensapi.model;
 
-import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
@@ -24,7 +23,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
 @Table(name = "tb_user")
-public class UserModel implements UserDetails, Serializable {
+public class UserModel implements UserDetails {
 	
 	private static final long serialVersionUID = 1L;
 
